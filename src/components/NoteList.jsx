@@ -7,6 +7,7 @@ const NoteList = ({ notes, deleteNote }) => {
   }
   return (
     <div className="space-y-4">
+      <h1>Notes</h1>
       {notes.map((note) => (
         <Note key={note.id} note={note} deleteNote={deleteNote} />
       ))}
